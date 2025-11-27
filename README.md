@@ -1,6 +1,6 @@
-# Jesus Javier Orozco Corona - IT Project Portfolio
+# Jesus Orozco - IT Project Portfolio
 
-### 🚀 **View My Live Portfolio: [Orozco.pw](orozco.pw)**
+### 🚀 **View My Live Portfolio: [Orozco.pw](https://www.orozco.pw)**
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/835d6908-1104-4831-82c2-2bb6b1f3ba0b/deploy-status)](https://app.netlify.com/projects/project-porfolio/deploys)
 

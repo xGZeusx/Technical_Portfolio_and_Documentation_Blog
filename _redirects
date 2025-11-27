@@ -1,0 +1,34 @@
+# Netlify redirects
+# Redirect root and index to portfolio.html (permanent)
+/    /portfolio.html    301!
+/index.html    /portfolio.html    301!
+
+# ----- Project folder -> descriptive file redirects -----
+/projects/PC_Build              /projects/pc-build.html              301!
+/projects/MIDI_Visualizer      /projects/midi-visualizer.html 301!
+/projects/Game_Console        /projects/game-console.html       301!
+/projects/Home_Server         /projects/home-server.html         301!
+/projects/Website_Hosting     /projects/website-hosting.html 301!
+
+# ----- Guides redirects -----
+/guides/SteamRomManager       /guides/steam-rom-manager.html 301!
+
+# Keep the root redirects at the top so they run first
+
+# ----- Pretty / Short URLs (friendly slugs) -----
+# Direct short slugs to their canonical project pages (301 permanent)
+/pc-build                 /projects/pc-build.html                 301!
+/midi-visualizer         /projects/midi-visualizer.html 301!
+/game-console            /projects/game-console.html       301!
+/home-server             /projects/home-server.html         301!
+/website-hosting         /projects/website-hosting.html 301!
+
+# Short guide slugs
+/steam-rom-manager       /guides/steam-rom-manager.html 301!
+
+# Optional: root-level pretty URLs for projects (alias)
+/projects/pc-build       /projects/pc-build.html                 301!
+/projects/midi-visualizer /projects/midi-visualizer.html 301!
+/projects/game-console   /projects/game-console.html       301!
+/projects/home-server    /projects/home-server.html         301!
+/projects/website-hosting /projects/website-hosting.html 301!

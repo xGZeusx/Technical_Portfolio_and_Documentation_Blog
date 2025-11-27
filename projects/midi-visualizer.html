@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Building a custom LED visualizer for piano using Raspberry Pi, soldering, MIDI integration, and a web UI. A hands-on project combining hardware and software skills.">
+    <meta name="keywords" content="Raspberry Pi, LED visualizer, piano, MIDI, Python, web development, electronics, soldering">
+    <meta property="og:title" content="My Piano LED Visualizer">
+    <meta property="og:description" content="Bringing piano practice to life with a custom LED visualizer controlled by Raspberry Pi and a custom web interface.">
+    <meta property="og:type" content="article">
+    <link rel="canonical" href="/projects/midi-visualizer.html">
+    <title>Project: My Piano LED Visualizer</title>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "My Piano LED Visualizer",
+      "description": "Building a custom LED visualizer for piano using Raspberry Pi, soldering, MIDI integration, and a web UI.",
+      "author": {
+        "@type": "Person",
+        "name": "Jesus Orozco"
+      },
+      "datePublished": "2025-01-01"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header class="project-header">
+        <div class="project-container">
+            <nav>
+                <a href="../portfolio.html" class="back-link">&larr; Back to All Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="project-container">
+            <h1>My Piano LED Visualizer</h1>
+            <p class="subtitle">Bringing my piano practice to life by building a custom LED visualizer, controlled by a Raspberry Pi and a custom web interface.</p>
+            
+            <figure class="project-banner-image">
+                 
+                <figcaption>The final setup, with the tablet-controlled web UI and the LED strip in action.</figcaption>
+            </figure>
+
+            <section>
+                <h2>The Inspiration: Recreating a Learning Tool</h2>
+                <p>Piano has been my hobby since middle school, where I first started learning from YouTube videos. Recently, I decided to get more serious about my playing, so I enrolled in a few courses and started recording myself to track my progress. That's when I remembered the mesmerizing Synthesia-style videos I used to learn with—where the keys light up as they're played. I knew I had to replicate that effect on my own piano.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Tu96yevGMEA?si=3jJTkJNQRMQ78Pyp" title="Source of Inspiration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>I searched online for a ready-made kit and found one, but the nearly <a href="https://www.pianoledshop.com/products/piano-led-plus-2026"><strong>$200 price tag</strong></a> was a bit shocking. That's what pushed me to research a DIY solution. I discovered I could build my own system for around <strong>$70</strong> using a Raspberry Pi, turning a simple desire into a full-fledged technical project.</p>
+            </section>
+
+            <section>
+                <h2>The Build: New Tools and New Skills</h2>
+                <p>I bought all the necessary materials online, following a guide I found on <a href="https://github.com/onlaj/Piano-LED-Visualizer?tab=readme-ov-file">GitHub</a>. The project required some tools I didn't own and had never used before, but I was committed to learning.</p>
+                 <ul>
+                    <li><strong>Learning to Solder:</strong> The project required a soldering iron to connect the LED strip. I dove in headfirst and, after a few questionable attempts, I learned how to create clean, strong solder joints without burning the house down! It was an invaluable hands-on skill to acquire.</li>
+                    <li><strong>Headless Configuration via SSH:</strong> While experimenting, I had a cool breakthrough. I learned I could <strong>SSH</strong> into the Raspberry Pi remotely from my main computer. This allowed me to configure everything—the network, the Python scripts, the web server—without ever needing a dedicated monitor or keyboard for the Pi.</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>The Final Product: An Interactive Music Experience</h2>
+                <p>The finished project is a sleek LED strip taped neatly above the piano keys, wired directly to a discreet Raspberry Pi Zero. The entire system is controlled by a <strong>custom web UI</strong> that I can access from my tablet, which sits perfectly on the music stand. </p>
+                <div class="video-placeholder">
+    <a href="https://youtu.be/Tk7sjDQnt2M" target="_blank" rel="noopener noreferrer">
+        
+        <img src="../assets/projects/piano-video-thumbnail.png" alt="A demonstration of my MIDI LED Visualizer in action">
+        
+        <div class="play-button-overlay">▶ Watch on YouTube</div>
+    </a>
+</div>
+                <p>The visualizer has two main functions:</p>
+                <ol>
+                    <li><strong>Live Mode:</strong> Each key I press on the piano lights up the corresponding LED instantly, providing real-time visual feedback for my practice.</li>
+                    <li><strong>Playback Mode:</strong> I can send pre-recorded MIDI files through the web UI, and the piano will play the song for me, lights and all—just like those Synthesia videos that inspired the whole project.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Skills Demonstrated</h2>
+                <ul>
+                    <li><strong>Hardware Integration:</strong> Interfacing a Raspberry Pi with an LED strip and a MIDI keyboard.</li>
+                    <li><strong>Basic Soldering & Electronics:</strong> Assembling and connecting electronic components safely and effectively.</li>
+                    <li><strong>Headless System Configuration:</strong> Setting up and managing a device remotely using SSH.</li>
+                    <li><strong>Software & Scripting:</strong> Using Python to process MIDI data and control hardware.</li>
+                    <li><strong>Web Interface Development:</strong> Creating a simple web UI to control a physical device.</li>
+                    <li><strong>Resourcefulness & Problem Solving:</strong> Choosing a cost-effective DIY solution over a commercial product and self-teaching the necessary skills.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>This project was the perfect marriage of my passion for music and my interest in technology. It took me from a simple idea to a fully functional, custom-built device that I use regularly. More importantly, it pushed me to learn new, practical skills like soldering and remote system administration, which have significantly boosted my confidence and capabilities.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="project-footer">
+        <div class="project-container">
+             <p>&copy; 2025 Jesus Orozco | <a href="../portfolio.html" class="back-link">Back to Home</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
